@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Result</title>
+</head>
+<body>
+    <h1>Thank you for your submission!</h1>
+    <h2>Your Responses:</h2>
+    <p><strong>Overall Impression:</strong> <%= data.textQuestion %></p>
+    <p><strong>Design Rating:</strong> <%= data.designRating %></p>
+    <p><strong>Preferred Device:</strong> <%= data.preferredDevice %></p>
+    <p><strong>Useful Features:</strong></p>
+    <ul>
+        <% if(data.features) { %>
+            <% data.features.forEach(function(feature) { %>
+                <li><%= feature %></li>
+            <% }); %>
+        <% } %>
+    </ul>
+    <p><strong>Additional Comments:</strong> <%= data.comments %></p>
+</body>
+</html>

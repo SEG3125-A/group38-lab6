@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-Screen Background */
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    height: 100%;
+    background-image: url('TDTY_Website-banner_bg_v1-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header .logo {
+    max-width: 200px; 
+    height: auto;
+    margin: 0 auto;
+}
+
+
+main.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    max-width: 500px; 
+    width: 100%;
+}
+
+
+question {
+    margin-bottom: 20px;
+}
+
+question label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+question input[type='radio'],
+question input[type='checkbox'] {
+    margin-right: 10px;
+}
+
+question textarea,
+question select {
+    width: 100%;
+    padding: 10px;
+}
+
+
+button[type='submit'] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button[type='submit']:hover {
+    background-color: #45a049;
+}
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    header logo {
+        max-width: 150px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
